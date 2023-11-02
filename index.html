@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="top back">
+            <div class="logo"><img src="owl3.png" alt="owl picture" style="height: 10vh; width: 10vh; position: relative; left: 2vh; top: 2vh;"></div>
+            <div class="head">
+                <p class="title">Portfolio</p>
+            </div>
+            <div class="head2">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="apm">am/pm</span>
+                <div >
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div><abbr title="About"><a href="#aboutID"><img src="about.png" alt="" style="height: 45px; width: 45px;"></a></abbr></div>
+            <div><abbr title="ptoject"><a href="#projectID"><img src="pro.png" alt="" style="height: 45px; width: 45px;"></a></abbr></div>
+            <div><abbr title="Images"><a href=""><img src="view.png" alt="" style="height: 45px; width: 45px;"></a></abbr></div> 
+            <div><abbr title="E-mail"><a href=""><img src="email.png" alt="" style="height: 45px; width: 45px;"></a></abbr></div>
+            <div><a href=""><img src="know.png" alt="" style="height: 45px; width: 45px;"></a></div>
+        </div>
+
+        <div class="middle">
+            <div class="about" id="aboutID">
+                <div class="art">
+                    <h1>About</h1>
+                    <p style="padding: 60px;"> Hello, My name is Aditya kumar, I am from (Aurangabad) Bihar. I am currently in second year graguation, i will be finishing it in 2025 from ANS college Nabinager, Branch of Magadh univarcity(gaya). I am good with web designing and I am currently training in Besant technologies (banglore). I am looking for opertuinities in fullstack JAVA development role and web designing where i can improve my skills as well as contribut in the organization groth. I think the Key to groth is to keep the whole team together and coordination between all the members and, if we can do something in time we should strive to do it better in every way possible, When i have free time i like to know about cyber security and web developement i was born in jharkhand and raised in bihar, i am native to bihar my family consist of five people, my grand-father, mother, father, a big brother and me. For me i like to keep learning new things and implement it in my daily work while keeping the security and other aspect of my work</p>
+                    <br>
+                    <p style=" float: right; color: aliceblue; position: relative; right: 30px;"><i>Aditya kumar</i></p>
+                </div>
+                <div class="pic"><img src="name.jpg" alt="Me" style="width: 100vh; height: 68vh;"></div>
+            </div>
+            <div class="project" id="projectID">
+                <div class="proj">
+                    <div class="pro1"><a href=""><img src="1.png" alt="" style="height: 240px; width: 480px;"></a></div>
+                    <div class="pro1 pro2">
+                        <div><a href="https://adityak538.github.io/Clock_JS/"><img src="pro4.png" alt="" style="height: 240px; width: 480px;"></a></div>
+                    </div>
+                </div>
+                <div class="proj">
+                    <div class="pro1"><a href="https://adityak538.github.io/CSS_form/"><img src="2.png" alt="" style="height: 240px; width: 480px;"></a></div>
+                    <div class="pro1 pro2">
+                        <div><a href="https://adityak538.github.io/Amazon_dummy/"><img src="Amaz.png" alt="" style="height: 240px; width: 480px;"></a></div>
+                    </div>
+                </div>
+                <div class="proj">
+                    <div class="pro1"><a href="https://adityak538.github.io/Project1.gitgub.io/"><img src="3.png" alt="" style="height: 240px; width: 480px;"></a></div>
+                    <div class="pro1 pro2">
+                        <div><a href="https://adityak538.github.io/Besant_Student_Appllication/"><img src="fm.png" alt="" style="height: 240px; width: 480px;"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="extra">
+                <div class="t_mail">
+                    <h1>Sign-UP with Google account</h1>
+                    <!-- <div><a href="" target="_blank">Sign-UP</a></div> -->
+                    <form action="https://accounts.google.com/signin">
+                        <h1>E-mail</h1> <input type="email" class="inp" placeholder="Enter E-mail here"><br>
+                        <input type="submit" class="sub">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="me">
+                <p>Name: Aditya kumar</p>
+                <p>phone-no: 9905192843</p>
+                <p>E-mail: adityakumarak050@gmail.com</p>
+            </div>
+
+            <div class="link">
+                <p style="color: aliceblue; position: relative; left: 140px;">Links for my work</p>
+                <a href=""><img src="github.png" alt="" style="height: 64px; width: 64px;"></a>
+                <a href=""><img src="linkedin.png" alt="" style="height: 64px; width: 64px;"></a>
+            </div>
+            <div class="thank">
+                <pre>
+                    thank you for checking
+                    this page to the end 
+                </pre>
+            </div>
+        </div>
+    </div>
+    <script>
+                function time(){
+        let clock =new Date()
+        let h = clock.getHours()
+        let m = clock.getMinutes()
+        let s = clock.getSeconds()
+        let a = "AM"
+        let p = "PM"
+        
+
+        let hr = document.querySelector('#hours')
+
+         if(h > 12)
+          ht=12-h
+
+        hr.innerHTML = h
+
+        let mn = document.querySelector('#minutes')
+        mn.innerHTML = m
+
+
+        let sc = document.querySelector('#seconds')
+        sc.innerHTML = s
+
+         
+        let tap = document.querySelector('#apm')
+        if(h < 12)
+        tap.innerHTML = a
+        else
+        tap.innerHTML = p
+        }
+
+        setInterval(time,1000)
+    </script>
+</body>
+</html>
